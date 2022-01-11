@@ -1,114 +1,112 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
 
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-	</head>
-
-	<body>
-		<div id="wrap">
-			<div id="left_side">
-				<div class="active">
-					<p>33选7</p>
-				</div>
-				<div>
-					<p>33选7</p>
-				</div>
-				<div>
-					<p>33选7</p>
-				</div>
-			</div>
-			<div id="content">
-				<div class="con_left">
-					<div class="balls">
-						<ul>
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							<li>5</li>
-							<li>6</li>
-							<li>7</li>
-							<li>8</li>
-							<li>9</li>
-							<li>10</li>
-							<li>11</li>
-							<li>12</li>
-							<li>13</li>
-							<li>14</li>
-							<li>15</li>
-							<li>16</li>
-							<li>17</li>
-							<li>18</li>
-							<li>19</li>
-							<li>20</li>
-							<li>21</li>
-							<li>22</li>
-							<li>23</li>
-							<li>24</li>
-							<li>25</li>
-							<li>26</li>
-							<li>27</li>
-							<li>28</li>
-							<li>29</li>
-							<li>30</li>
-							<li>31</li>
-							<li>32</li>
-							<li>33</li>
-						</ul>
-					</div>
-					<div class="num">
-						投注注数：<input type="text" value="1"/>
-						<span style="position: absolute; top: 10px; right: 135px;">注</span>
-					</div>
-					<div class="left_button">
-						<span><button onclick="done()">投注</button></span>
-						<span><button onclick="ran(selected_li)">机选</button></span>
-					</div>
-				</div>
-				<div class="con_right">
-					<div class="r_select">
-						<p>选号结果：</p>
-						<ul class="selected">
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-					<div class="r_button">
-						<span><button onclick="ran(checked_li)">开奖</button></span>
-						<span><button onclick="cancel()">取消</button></span>
-					</div>
-					<div class="r_result">
-						<p>开奖结果：</p>
-						<div class="ball_result">
-							<ul class="checked">
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-						</div>
-						<div class="message">
-							<p>开奖信息：</p>
-							<p id="bingo">等待选号...</p>
-							<p id="award_type">Good luck！祝猪好运~</p>
-							<p id="award_amount">最高可中一千万！！！</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
-	</body>
-
+  <body>
+    <div id="wrap">
+      <div id="left_side">
+        <div class="active">
+          <p>双色球</p>
+        </div>
+        <div>
+          <p>33选7</p>
+        </div>
+        <div>
+          <p>33选7</p>
+        </div>
+      </div>
+      <div id="content">
+        <div class="con_left">
+          <div class="balls">
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>11</li>
+              <li>12</li>
+              <li>13</li>
+              <li>14</li>
+              <li>15</li>
+              <li>16</li>
+              <li>17</li>
+              <li>18</li>
+              <li>19</li>
+              <li>20</li>
+              <li>21</li>
+              <li>22</li>
+              <li>23</li>
+              <li>24</li>
+              <li>25</li>
+              <li>26</li>
+              <li>27</li>
+              <li>28</li>
+              <li>29</li>
+              <li>30</li>
+              <li>31</li>
+              <li>32</li>
+              <li>33</li>
+            </ul>
+          </div>
+          <div class="num">
+            投注注数：<input type="text" value="1" />
+            <span style="position: absolute; top: 10px; right: 135px">注</span>
+          </div>
+          <div class="left_button">
+            <span><button onclick="done()">投注</button></span>
+            <span><button onclick="ran(selected_li)">机选</button></span>
+          </div>
+        </div>
+        <div class="con_right">
+          <div class="r_select">
+            <p>选号结果：</p>
+            <ul class="selected">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="blue-ball"></li>
+            </ul>
+          </div>
+          <div class="r_button">
+            <span><button onclick="ran(checked_li)">开奖</button></span>
+            <span><button onclick="cancel()">取消</button></span>
+          </div>
+          <div class="r_result">
+            <p>开奖结果：</p>
+            <div class="ball_result">
+              <ul class="checked">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li class="blue-ball"></li>
+              </ul>
+            </div>
+            <div class="message">
+              <p>开奖信息：</p>
+              <p id="bingo">等待选号...</p>
+              <p id="award_type">Good luck！祝猪好运~</p>
+              <p id="award_amount">最高可中一千万！！！</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
 </html>
