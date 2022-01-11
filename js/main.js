@@ -43,6 +43,25 @@ for (var i = 0; i < ball.length; i++) {
   };
 }
 
+function copyText() {
+  if (arr.length !== 7) {
+    alert("请先选择号码再进行操作猪~");
+    return;
+  }
+  var input = document.createElement("input");
+  var arr2 = arr.map((i) => (i = i + 1));
+  var copy_file = arr2.join(" ");
+  console.log(copy_file);
+  document.body.appendChild(input);
+  input.setAttribute("value", copy_file);
+  input.select();
+  if (document.execCommand("copy")) {
+    document.execCommand("copy");
+    alert("复制成功猪~");
+  }
+  document.body.removeChild(input);
+}
+
 count.onkeydown = function () {
   //	var e = event.srcElement;
   if (event.keyCode == 38) {
@@ -99,7 +118,7 @@ function sortNum(a, b) {
 
 function done() {
   if (blueNum < 0) {
-    alert("请选择6个红球！！！");
+    alert("请选择6个红球！！！猪~");
     return;
   }
 
@@ -111,7 +130,7 @@ function done() {
       selected_li[i].innerHTML = arr[i] + 1;
     }
   } else {
-    alert("请选择6个红球！！！");
+    alert("请选择6个红球！！！猪~");
   }
 }
 
