@@ -13,6 +13,12 @@ var ball = document.querySelectorAll(".con_left li"),
   arr = new Array(),
   arr1 = new Array();
 
+var blueNum = "";
+document.querySelector(".blue-ball").onclick = function () {
+  blueNum = Math.floor(Math.random() * 16);
+  selected_li[6].innerHTML = blueNum + 1;
+};
+
 for (var i = 0; i < left_side.length; i++) {
   left_side[i].index = i;
   left_side[i].onclick = function () {
@@ -22,8 +28,6 @@ for (var i = 0; i < left_side.length; i++) {
     this.className = "active";
   };
 }
-
-var blueNum = "";
 
 for (var i = 0; i < ball.length; i++) {
   ball[i].index = i;
