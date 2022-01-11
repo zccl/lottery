@@ -93,12 +93,24 @@
   border-radius: 5px;
 }
 
+#content .con_right .special {
+  background: url(../img/btn.png) no-repeat -220px -4px;
+}
+
 #content .con_right button:hover {
   background: url(../img/btn.png) no-repeat -112px -53px;
 }
 
+#content .con_right .special:hover {
+  background: url(../img/btn.png) no-repeat 0 -4px;
+}
+
 #content .con_right button:active {
   background: url(../img/btn.png) no-repeat -222px -53px;
+}
+
+#content .con_right .special:active {
+  background: url(../img/btn.png) no-repeat -110px -4px;
 }
 
 #content .r_result {
