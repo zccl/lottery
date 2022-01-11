@@ -1,224 +1,230 @@
-			* {
-				margin: 0;
-				padding: 0;
-				font-family: "微软雅黑";
-				font-size: 16px;
-				color: rgb(113, 135, 255);
-			}
-			
-			#wrap {
-				margin: 0 auto;
-				width: 1000px;
-				height: 600px;
-				border: 1px solid cadetblue;
-			}
-			
-			#left_side {
-				margin: 65px 0 65px 20px;
-				width: 48px;
-				float: left;
-			}
-			
-			#left_side div {
-				height: 153px;
-				margin-bottom: 2px;
-				border-radius: 5px;
-				font-size: 20px;
-				background: rgb(238, 241, 255);
-				cursor: pointer;
-			}
-			
-			#left_side div.active {
-				background: lightblue;
-			}
-			
-			
-			#left_side div p {
-				text-align: center;
-				padding: 15px 5px;
-				line-height: 40px;
-				font-size: 20px;
-				letter-spacing: 0.2em;
-			}
-			
-			#content {
-				margin: 40px 20px 40px 0;
-				width: 885px;
-				height: 495px;
-				border: 13px solid rgb(227, 231, 255);
-				background: rgb(227, 231, 255);
-				float: left;
-				border-radius: 15px;
-			}
-			
-			#content .con_left {
-				width: 400px;
-				height: 493px;
-				background: rgb(238, 241, 255);
-				float: left;
-				border-radius: 5px;
-			}
-			
-			#content .con_right {
-				width: 462px;
-				height: 493px;
-				float: right;
-			}
-			
-			#content .r_select {
-				width: 462px;
-				height: 152px;
-				background: rgb(238, 241, 255);
-				float: right;
-				border-radius: 5px;
-			}
-			
-			#content .r_button {
-				width: 462px;
-				height: 92px;
-				float: right;
-				text-align: center;
-			}
-			
-			#content .r_button span {
-				margin: 0 20px;
-			}
-			
-			#content .con_right button {
-				margin: 22px 0;
-				width: 109px;
-				height: 41px;
-				background: url(../img/btn.png) no-repeat -2px -53px;
-				line-height: 41px;
-				color: white;
-				border-radius: 5px;
-			}
-			
-			#content .con_right button:hover {
-				background: url(../img/btn.png) no-repeat -112px -53px;
-			}
-			
-			#content .con_right button:active {
-				background: url(../img/btn.png) no-repeat -222px -53px;
-			}
-			
-			#content .r_result {
-				width: 462px;
-				height: 250px;
-				float: right;
-				background: rgb(238, 241, 255);
-				border-radius: 5px;
-			}
-			
-			#content .con_left .balls {
-				width: 100%;
-				height: 70%;
-				text-align: center;
-				line-height: 50px;
-			}
-			
-			#content .con_left .balls ul li {
-				list-style: none;
-				width: 50px;
-				height: 50px;
-				float: left;
-				background: url(../img/ball.png);
-				border: 1px solid cornsilk;
-				border-radius: 50%;
-				margin: 7px 0 7px 4px;
-				cursor: pointer;
-			}
-			
-			#content .con_left .balls ul li.select {
-				background-position: 100px 0;
-			}
-			
-			#content .con_left .num {
-				text-align: center;
-				position: relative;
-			}
-			
-			#content .con_left .num input {
-				width: 85px;
-				height: 40px;
-				border: 1px solid rgb(113, 135, 255);
-				border-radius: 5px;
-				background: rgb(238, 241, 255);
-				margin: 0 30px;
-			}
-			
-			#content .con_left .left_button {
-				text-align: center;
-			}
-			
-			#content .con_left button {
-				margin: 28px;
-				width: 109px;
-				height: 41px;
-				background: url(../img/btn.png) no-repeat -220px -4px;
-				line-height: 41px;
-				color: white;
-				border-radius: 5px;
-			}
-			
-			#content .con_left button:hover {
-				background: url(../img/btn.png) no-repeat 0 -4px;
-			}
-			
-			#content .con_left button:active {
-				background: url(../img/btn.png) no-repeat -110px -4px;
-			}
-			
-			.con_right .r_select p,
-			.con_right .r_result p {
-				margin: 15px;
-			}
-			
-			.con_right .r_select ul {
-				width: 422px;
-				height: 80%;
-				text-align: center;
-				margin: 10px 20px;
-			}
-			
-			.con_right .r_select ul li,
-			.con_right .r_result ul li {
-				list-style: none;
-				width: 50px;
-				height: 50px;
-				float: left;
-				background: url(../img/ball.png);
-				background-position: 100px 0;
-				border: 1px solid cornsilk;
-				border-radius: 50%;
-				margin: 10px 4px;
-				text-align: center;
-				line-height: 50px;
-			}
-			
-			.con_right .r_result ul {
-				text-align: center;
-				margin: 0 20px;
-			}
-			
-			.con_right .r_result ul li {
-				background-position: 50px 0;
-				margin: 0 4px;
-			}
-			
-			.con_right .r_result p {
-				margin: 10px;
-			}
-			
-			.con_right .r_result .ball_result {
-				width: 462px;
-				height: 52px;
-			}
-			
-			.con_right .r_result .message {
-				width: 462px;
-			}
-			
-			.con_right .r_result .message p {
-				text-align: center;
-			}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  color: rgb(113, 135, 255);
+}
+
+#wrap {
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+  border: 1px solid cadetblue;
+}
+
+#left_side {
+  margin: 65px 0 65px 20px;
+  width: 48px;
+  float: left;
+}
+
+#left_side div {
+  height: 153px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  font-size: 20px;
+  background: rgb(238, 241, 255);
+  cursor: pointer;
+}
+
+#left_side div.active {
+  background: lightblue;
+}
+
+#left_side div p {
+  text-align: center;
+  padding: 15px 5px;
+  line-height: 40px;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+}
+
+#content {
+  margin: 40px 20px 40px 0;
+  width: 885px;
+  height: 495px;
+  border: 13px solid rgb(227, 231, 255);
+  background: rgb(227, 231, 255);
+  float: left;
+  border-radius: 15px;
+}
+
+#content .con_left {
+  width: 400px;
+  height: 493px;
+  background: rgb(238, 241, 255);
+  float: left;
+  border-radius: 5px;
+}
+
+#content .con_right {
+  width: 462px;
+  height: 493px;
+  float: right;
+}
+
+#content .r_select {
+  width: 462px;
+  height: 152px;
+  background: rgb(238, 241, 255);
+  float: right;
+  border-radius: 5px;
+}
+
+#content .r_button {
+  width: 462px;
+  height: 92px;
+  float: right;
+  text-align: center;
+}
+
+#content .r_button span {
+  margin: 0 20px;
+}
+
+#content .con_right button {
+  margin: 22px 0;
+  width: 109px;
+  height: 41px;
+  background: url(../img/btn.png) no-repeat -2px -53px;
+  line-height: 41px;
+  color: white;
+  border-radius: 5px;
+}
+
+#content .con_right button:hover {
+  background: url(../img/btn.png) no-repeat -112px -53px;
+}
+
+#content .con_right button:active {
+  background: url(../img/btn.png) no-repeat -222px -53px;
+}
+
+#content .r_result {
+  width: 462px;
+  height: 250px;
+  float: right;
+  background: rgb(238, 241, 255);
+  border-radius: 5px;
+}
+
+#content .con_left .balls {
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  line-height: 50px;
+}
+
+#content .con_left .balls ul li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: url(../img/ball.png);
+  border: 1px solid cornsilk;
+  border-radius: 50%;
+  margin: 7px 0 7px 4px;
+  cursor: pointer;
+}
+
+#content .con_left .balls ul li.select {
+  background-position: 100px 0;
+}
+
+#content .con_left .num {
+  text-align: center;
+  position: relative;
+}
+
+#content .con_left .num input {
+  width: 85px;
+  height: 40px;
+  border: 1px solid rgb(113, 135, 255);
+  border-radius: 5px;
+  background: rgb(238, 241, 255);
+  margin: 0 30px;
+}
+
+#content .con_left .left_button {
+  text-align: center;
+}
+
+#content .con_left button {
+  margin: 28px;
+  width: 109px;
+  height: 41px;
+  background: url(../img/btn.png) no-repeat -220px -4px;
+  line-height: 41px;
+  color: white;
+  border-radius: 5px;
+}
+
+#content .con_left button:hover {
+  background: url(../img/btn.png) no-repeat 0 -4px;
+}
+
+#content .con_left button:active {
+  background: url(../img/btn.png) no-repeat -110px -4px;
+}
+
+.con_right .r_select p,
+.con_right .r_result p {
+  margin: 15px;
+}
+
+.con_right .r_select ul {
+  width: 422px;
+  height: 80%;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.con_right .r_select ul li,
+.con_right .r_result ul li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  float: left;
+  background: url(../img/ball.png);
+  background-position: -100px 0;
+  border: 1px solid cornsilk;
+  border-radius: 50%;
+  margin: 10px 4px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.blue-ball {
+  background-position: -50px 0 !important;
+}
+
+.selected .blue-ball {
+  cursor: pointer;
+}
+
+.con_right .r_result ul {
+  text-align: center;
+  margin: 0 20px;
+}
+
+.con_right .r_result ul li {
+  margin: 0 4px;
+}
+
+.con_right .r_result p {
+  margin: 10px;
+}
+
+.con_right .r_result .ball_result {
+  width: 462px;
+  height: 52px;
+}
+
+.con_right .r_result .message {
+  width: 462px;
+}
+
+.con_right .r_result .message p {
+  text-align: center;
+}
